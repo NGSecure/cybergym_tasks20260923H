@@ -1,0 +1,1 @@
+ImageMagick (ASan build): parsing an internal DOCTYPE entity declaration inside an embedded XML/XMP profile scans forward looking for a delimiting space character but doesn't stop at the string terminator, so a malformed entity name lacking that delimiter makes the scan read one byte past the end of the heap-allocated entity buffer.

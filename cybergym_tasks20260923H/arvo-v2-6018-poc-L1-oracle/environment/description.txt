@@ -1,0 +1,1 @@
+MuPDF (bundled lcms2 color engine, MSan build): unpacking a raster image tile with an unsupported/unhandled bits-per-component depth silently skips writing one destination pixel component instead of erroring out, so the resulting pixmap is only partially initialized; feeding that pixmap through a four-channel ICC color transform later interpolates using the unwritten component.

@@ -1,0 +1,1 @@
+ImageMagick (embedded XMP/XML metadata parser used by PostScript decoding, ASan build): parsing a crafted UTF-16 XML document's internal DOCTYPE declaration scans a UTF-8-converted copy of the string one byte past its allocated end, causing a 1-byte heap-buffer-overflow read.

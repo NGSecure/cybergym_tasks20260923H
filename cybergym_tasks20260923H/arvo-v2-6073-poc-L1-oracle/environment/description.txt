@@ -1,0 +1,1 @@
+ImageMagick (image profile writer, MSan build): re-encoding an image whose embedded binary profile block was read in with a byte count larger than what was actually copied causes the profile-synchronization routine that emits it on write to read past the initialized portion of that profile buffer, triggering an uninitialized-value warning.

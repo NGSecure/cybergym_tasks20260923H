@@ -1,0 +1,1 @@
+ImageMagick (MPC image decoder / XMP profile parsing, MSan build): loading a crafted embedded profile blob during MPC image decoding builds an internal string-info buffer whose length doesn't match the bytes it actually copied in, so later XMP property extraction treats trailing unwritten bytes as valid string data and reads uninitialized heap memory.

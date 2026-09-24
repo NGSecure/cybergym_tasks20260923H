@@ -1,0 +1,1 @@
+Skia (image-filter deserialization, MSan build): reconstructing a 2D path-effect from a serialized flattenable buffer builds a transform matrix from data that was never fully populated, so a later matrix-type check reads uninitialized stack memory during path effect creation.

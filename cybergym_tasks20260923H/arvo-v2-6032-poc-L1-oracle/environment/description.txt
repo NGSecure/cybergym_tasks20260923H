@@ -1,0 +1,1 @@
+ImageMagick (ASan build): formatting an image property string into the Radiance/HDR file header uses an unbounded %s substitution into a fixed-size stack buffer, so a sufficiently long property value overflows the buffer, and the out-of-bounds bytes are read back when the header is subsequently written out.

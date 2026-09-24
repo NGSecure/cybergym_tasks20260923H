@@ -1,0 +1,1 @@
+ImageMagick (PICT image decoder, MSan build): decoding a crafted PICT file composites a decoded frame onto a canvas whose pixel cache was allocated but never fully initialized, so a later alpha-reciprocal computation during image compositing reads uninitialized heap memory.
