@@ -1,0 +1,1 @@
+ImageMagick (ASan build): decoding a crafted SIXEL raster image with a corrupted/oversized pixel-position field derived directly from the input causes an internal pixel-index pointer to be computed outside the allocated canvas buffer; writing through that wild pointer triggers a SEGV crash.

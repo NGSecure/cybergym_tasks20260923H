@@ -1,0 +1,1 @@
+curl (ASan build): matching a crafted wildcard/glob FTP pattern against a filename recurses through the fnmatch pattern-matching engine and reads one byte past the end of a small heap-allocated pattern buffer, triggering a 1-byte heap-buffer-overflow read.

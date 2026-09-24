@@ -1,0 +1,1 @@
+ImageMagick (MSan build): unpacking the run-length-encoded raster data of a crafted WPG (WordPerfect Graphics) image inserts a decoded raster row using a color-palette index value that was never initialized, causing a use-of-uninitialized-value warning when the palette entry is resolved.

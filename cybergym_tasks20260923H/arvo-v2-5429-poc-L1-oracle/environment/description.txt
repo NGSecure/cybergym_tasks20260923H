@@ -1,0 +1,1 @@
+ImageMagick (ASan build): converting a crafted SUN raster image's color palette to grayscale during color quantization writes 8 bytes past the end of a heap-allocated grayscale lookup table, causing a heap-buffer-overflow write while the image is being written out.

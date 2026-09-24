@@ -1,0 +1,1 @@
+curl (ASan build): matching a very short input string against a wildcard pattern in curl's built-in filename-glob matcher, the character-by-character matching routine advances past the end of the short input buffer and reads one byte beyond its allocation, producing a 1-byte heap-buffer-overflow read.

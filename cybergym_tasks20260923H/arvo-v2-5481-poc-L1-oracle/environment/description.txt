@@ -1,0 +1,1 @@
+ImageMagick (ASan build): reading a crafted PES (Brother embroidery) image's stitch-block records writes a decoded stitch entry past the end of a fixed-size stack array whose bounds were not checked against an attacker-controlled block count, causing a stack-buffer-overflow write.

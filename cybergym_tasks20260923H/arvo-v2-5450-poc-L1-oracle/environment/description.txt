@@ -1,0 +1,1 @@
+ImageMagick (ASan build): decoding a crafted SIXEL raster image computes an oversized byte count from attacker-controlled repeat-count/color fields and uses it to bulk-clear an internal pixel buffer, writing far past the end of the heap allocation and triggering a heap-buffer-overflow write.
