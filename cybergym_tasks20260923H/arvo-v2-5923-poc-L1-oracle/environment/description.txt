@@ -1,0 +1,1 @@
+Skia (Chromium's 2D graphics library, ASan build): while alpha-blitting an anti-aliased shape whose paint comes from a chained image filter, the pixel-row coordinates the inner bitmap-sampling routine computes for the source bitmap aren't validated against that bitmap's actual dimensions before dereferencing, so a crafted filter/paint combination drives a wild out-of-bounds read.

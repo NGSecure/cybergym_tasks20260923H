@@ -1,0 +1,1 @@
+Wireshark (SigComp protocol dissector, ASan build): decoding a UDVM bytecode operand embedded in a SigComp-compressed message reads a byte at an attacker-controlled offset into the fixed-size UDVM working-memory buffer without first validating that the offset stays in bounds, causing a heap out-of-bounds read.

@@ -1,0 +1,1 @@
+PROJ (proj.4 cartographic projection library, ASan build): auto-configuring an internal coordinate-transformation step composes a synthetic pipeline-step description with sprintf into a fixed-size stack buffer sized without accounting for the length of an attacker-supplied grid/axis parameter value, overflowing the stack when that value is long.

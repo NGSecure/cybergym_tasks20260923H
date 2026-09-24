@@ -1,0 +1,1 @@
+OpenThread (Thread mesh-networking stack, ASan build): while resolving an attacker-supplied Service TLV's enterprise-vendor flag position during the same CoAP server-data registration path, the code reads one byte past the end of the same undersized reassembled-network-data stack buffer, producing a second, distinct stack-buffer-overflow read at a different sub-TLV accessor.

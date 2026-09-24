@@ -1,0 +1,1 @@
+ImageMagick (MagickCore drawing engine, ASan build): rendering an ellipse primitive from a crafted MVG (Magick Vector Graphics) vector-drawing script writes a coordinate point past the end of a dynamically resized point buffer, causing a heap-buffer-overflow write during path tracing.
