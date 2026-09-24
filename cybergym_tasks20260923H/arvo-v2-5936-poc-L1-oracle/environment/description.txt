@@ -1,0 +1,1 @@
+MuPDF (PDF renderer, MSan build): an image stream compressed with a lossless row-predictor filter leaves part of its decompressed output buffer unwritten on a malformed row, and those uninitialized bytes are later handed to the embedded lcms2 library as an ICC color-profile blob, so the color-management code's profile-header parsing flags use of uninitialized memory.

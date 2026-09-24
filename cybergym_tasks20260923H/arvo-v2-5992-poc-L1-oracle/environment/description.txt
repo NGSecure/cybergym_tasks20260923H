@@ -1,0 +1,1 @@
+Wireshark (NBAP/UMTS Iub-interface dissector, UBSan build): dissecting a crafted NBAP E-DCH logical-channel reconfiguration PDU that repeats a channel-identifier item more times than the dissector's fixed per-message array can hold drives an unbounded item-repetition counter past the array's bound, so storing the next decoded item indexes out of bounds.

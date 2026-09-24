@@ -1,0 +1,1 @@
+ImageMagick (MSan build): writing a two-channel (gray+alpha) PSD image reads back an alpha sample from a pixel cache region that a channel-index mixup left unpopulated during the earlier raw/RLE channel decode, so a quantum-scaling helper consumes uninitialized pixel data on the write path.

@@ -1,0 +1,1 @@
+ImageMagick (GIMP XCF image decoder, MSan build): parsing a crafted XCF file's layered tile hierarchy composites a newly allocated but only partially filled pixel buffer into the target image, so the per-channel clamp step that follows reads uninitialized pixel memory.

@@ -1,0 +1,1 @@
+Skia (2D graphics library, MSan build): compositing a bitmap through a color-filter image effect first sprite-copies the source bitmap without fully populating every pixel channel, so a later raster-pipeline stage that un-premultiplies alpha reads a color channel that was never written.

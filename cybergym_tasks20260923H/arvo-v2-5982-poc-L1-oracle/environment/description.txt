@@ -1,0 +1,1 @@
+Skia (2D graphics library, MSan build): anti-aliased scan conversion of a filled path/rect blits through a raster-pipeline blend-and-dither sequence, and the dithering stage packs an output pixel using a source color component that an earlier blend stage in that same span left unset, so the final pixel-store step reads uninitialized data.

@@ -1,0 +1,1 @@
+openthread (Thread mesh-networking stack, ASan build): the Thread Leader's network-data registration handler parses a Service TLV received over CoAP without first validating the TLV's length/enterprise-flag encoding, so a malformed TLV makes an internal accessor compute an out-of-bounds offset into the on-stack network-data buffer and read past its end.
