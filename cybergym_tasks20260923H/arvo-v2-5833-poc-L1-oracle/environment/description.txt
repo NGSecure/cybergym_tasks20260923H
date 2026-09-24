@@ -1,0 +1,1 @@
+ImageMagick (MSan build): decoding a crafted XC-format image through the library's generic image-loading dispatcher, invoked directly from the C++ binding layer, leaves a geometry-string variable on that dispatcher's own stack frame uninitialized before it is read, producing a use-of-uninitialized-value warning.

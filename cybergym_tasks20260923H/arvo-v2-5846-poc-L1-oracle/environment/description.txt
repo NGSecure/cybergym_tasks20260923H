@@ -1,0 +1,1 @@
+ImageMagick (MSan build): reading a crafted DPX image sets up a pixel cache and colorspace without fully initializing every sample plane, and a later grayscale channel export/quantization step during the write-back path reads those uninitialized bytes, causing a use-of-uninitialized-value warning.

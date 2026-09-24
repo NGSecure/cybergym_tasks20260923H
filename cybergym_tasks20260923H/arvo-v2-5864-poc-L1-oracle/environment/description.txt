@@ -1,0 +1,1 @@
+OpenThread (Thread mesh-networking stack, ASan build): parsing an attacker-supplied Service TLV's nested sub-TLV list while a border router registers CoAP server network data reads one byte past the end of a fixed-size stack buffer holding the reassembled network-data payload, causing a stack-buffer-overflow read.

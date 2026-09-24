@@ -1,0 +1,1 @@
+ImageMagick (ASan build): writing a crafted PSD image derives a resource-block length from attacker-controlled header fields without validating it stays non-negative, and passing that negative length into a size_t-based memory-copy routine makes AddressSanitizer abort on a negative-size-param violation.

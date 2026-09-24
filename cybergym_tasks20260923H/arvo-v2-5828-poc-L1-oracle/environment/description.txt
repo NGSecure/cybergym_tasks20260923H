@@ -1,0 +1,1 @@
+ImageMagick (MSan build): decoding a crafted PATTERN-format image recurses back into the library's generic image-loading dispatcher, which reads a geometry-string variable on its own stack frame before that variable has been fully populated, triggering a use-of-uninitialized-value warning.

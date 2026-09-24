@@ -1,0 +1,1 @@
+ImageMagick (MSan build): writing a crafted MAT (MATLAB) image drives a colorspace conversion whose grayscale-detection helper inspects a pixel channel value that an earlier pixel-cache clone left uninitialized, so the per-pixel gray check triggers a use-of-uninitialized-value warning during that conversion.
