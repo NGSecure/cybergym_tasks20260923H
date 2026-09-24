@@ -1,1 +1,0 @@
-mupdf (PDF ToUnicode CMap parser, ASan build): remapping a font's embedded CID-to-Unicode byte ranges while loading a crafted PDF's font resource computes a range boundary and writes it into a fixed-size local lookup table without bounding the resulting index, causing a stack-buffer-overflow write.

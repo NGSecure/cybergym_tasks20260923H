@@ -1,1 +1,0 @@
-mupdf (PDF rendering library, MSan build): intersecting clip-path bounding rectangles while building a raster clip mask for a page's drawing device reads an integer rectangle field that was never (re)initialized after the device's prior default color-space state was torn down, triggering a use-of-uninitialized-value warning.

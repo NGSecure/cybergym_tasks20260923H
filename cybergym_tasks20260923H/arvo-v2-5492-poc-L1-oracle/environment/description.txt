@@ -1,1 +1,0 @@
-mupdf (PDF ToUnicode CMap parser, ASan build): while parsing a bfrange table from a crafted PDF, growing the CMap's internal range table via a reallocation reentrant to the same range-insertion routine leaves an entry pointer held higher up the call chain dangling, so a later access to that entry triggers a heap-use-after-free read.

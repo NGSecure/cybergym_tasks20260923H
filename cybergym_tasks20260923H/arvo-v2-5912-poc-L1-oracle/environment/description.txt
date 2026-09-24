@@ -1,1 +1,0 @@
-MuPDF (PDF stream-filter setup, MSan build): building a chain of decode filters for a malformed/encrypted PDF stream leaves a local filter-chain pointer unprotected across mupdf's setjmp/longjmp-based exception unwinding, so releasing that pointer on an error path reads a value the optimizer left uninitialized after the jump back.

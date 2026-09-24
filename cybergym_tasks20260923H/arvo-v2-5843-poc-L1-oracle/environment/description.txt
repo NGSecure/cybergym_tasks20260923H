@@ -1,1 +1,0 @@
-librawspeed (MSan build): decoding a crafted Pentax raw (PEF) TIFF file allocates the output raw-plane buffer but does not fill every row while unpacking an uncompressed sensor plane, so a later per-row initialization check reads uninitialized heap bytes and MemorySanitizer aborts during raw decoding.
