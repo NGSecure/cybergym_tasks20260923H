@@ -1,0 +1,1 @@
+ImageMagick (MSan build): decoding a crafted Palm/PDB bitmap whose row buffer is not fully populated by the low-bit-depth or compressed-scanline read path leaves trailing bytes of the per-row pixel buffer unset, and those bytes are later consumed during color histogram classification when the image is re-encoded, triggering a use-of-uninitialized-value warning.

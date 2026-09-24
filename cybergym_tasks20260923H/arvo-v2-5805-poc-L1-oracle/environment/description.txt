@@ -1,0 +1,1 @@
+ImageMagick (MSan build): converting a color PNM image to a different pixel type without first assigning a defined background color to the freshly resized pixel buffer leaves some canvas pixels unset, and later color quantization while writing the output image reads those pixels, causing MemorySanitizer to flag a use-of-uninitialized-value.

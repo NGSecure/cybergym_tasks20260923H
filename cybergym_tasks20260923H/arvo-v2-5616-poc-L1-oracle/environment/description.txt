@@ -1,0 +1,1 @@
+MuPDF (PDF renderer, MSan build): compositing a truncated raster image through an image-mask clip triggers bilinear-interpolation scaling that samples pixel bytes beyond what the short, padded decompressed image data actually filled in, reading uninitialized pixmap memory.

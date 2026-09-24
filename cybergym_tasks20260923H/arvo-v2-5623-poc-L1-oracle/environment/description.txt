@@ -1,0 +1,1 @@
+mupdf (MemorySanitizer build): rendering a PDF image whose sample bit depth falls outside the small set of natively supported pixel widths leaves part of the freshly allocated pixel buffer never written, so a later color-space conversion through the bundled ICC transform engine reads uninitialized bytes and MemorySanitizer flags a use-of-uninitialized-value warning.

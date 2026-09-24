@@ -1,0 +1,1 @@
+Skia (MemorySanitizer build): compositing a saved raster layer back onto the canvas through the SSE2 opaque sprite-blit path copies pixels from a region of the layer's bitmap that was allocated but never actually painted, so MemorySanitizer flags a use-of-uninitialized-value warning during the 32-bit pixel copy.

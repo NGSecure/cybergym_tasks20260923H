@@ -1,0 +1,1 @@
+ImageMagick (MSan build): loading a crafted PCX raster image with an unusual plane/depth combination leaves part of a pixel's channel bytes unset, and later probing that image to decide whether it should be encoded as monochrome reads those never-initialized bytes.
