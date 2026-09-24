@@ -1,0 +1,1 @@
+ImageMagick (MIFF image decoder, MSan build): parsing an embedded profile block out of a crafted MIFF image reads a not-yet-fully-populated string buffer while classifying the profile's keyword, so a case-insensitive name comparison consumes uninitialized bytes and MemorySanitizer flags a use-of-uninitialized-value warning.

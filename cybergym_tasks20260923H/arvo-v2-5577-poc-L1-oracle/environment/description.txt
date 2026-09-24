@@ -1,0 +1,1 @@
+open62541 (OPC UA server, ASan fuzz build): during server shutdown, a delayed cleanup callback detaches a session from its secure channel after the session object backing that callback has already been freed, causing a heap use-after-free write on the binary-message-processing fuzz target's teardown path.

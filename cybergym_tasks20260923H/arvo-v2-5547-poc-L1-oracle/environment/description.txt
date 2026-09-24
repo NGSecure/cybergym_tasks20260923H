@@ -1,0 +1,1 @@
+ImageMagick (DDS/DXT3 texture decoding path, ASan build): decoding a crafted DDS image's compressed color block writes a fully-unpacked pixel value into the image's pixel cache without keeping the write inside the region sized for the image's actual dimensions, producing a 4-byte heap-buffer-overflow write.

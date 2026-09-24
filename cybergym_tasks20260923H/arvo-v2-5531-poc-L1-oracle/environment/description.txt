@@ -1,0 +1,1 @@
+ImageMagick (PostScript/EPS decoding path, ASan build): parsing an embedded XML metadata profile pulled from a crafted PostScript image scans a converted string for an internal DOCTYPE declaration without bounding the scan to the buffer's actual allocated length, causing a one-byte heap-buffer-overflow read.

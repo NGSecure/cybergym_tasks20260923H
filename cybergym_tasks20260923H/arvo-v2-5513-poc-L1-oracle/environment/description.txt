@@ -1,0 +1,1 @@
+mupdf (PDF-parsing fuzz harness, ASan build): tearing down the rendering context after parsing a crafted PDF releases a shared, reference-counted colorspace resource that the interpreter's own object cache had already reclaimed moments earlier in the same shutdown sequence, causing a heap-use-after-free read.

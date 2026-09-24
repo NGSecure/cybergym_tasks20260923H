@@ -1,0 +1,1 @@
+open62541 (OPC UA binary-message fuzz harness, MSan build): tearing down a server after processing a crafted binary message frees session-related state during delayed-callback cleanup, and a subsequent secure-channel cleanup step reads a member of that now-stale memory without it ever being reinitialized, tripping a use-of-uninitialized-value check on the server shutdown path.

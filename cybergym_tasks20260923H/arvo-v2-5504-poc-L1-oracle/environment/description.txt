@@ -1,0 +1,1 @@
+open62541 (OPC UA server stack, ASan build): destroying the server instance directly iterates and tears down its secure channels, and one channel's own member-cleanup step reads a session entry that the session-tracking subsystem had already released earlier during the same teardown, causing a heap-use-after-free read.
