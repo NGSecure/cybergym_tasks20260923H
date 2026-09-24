@@ -1,0 +1,1 @@
+YARA (MSan build): scanning a malformed Android DEX file with the dex module parses an encoded class member whose declared size/count field is used to size a subsequent string copy without being fully validated against the file's actual bounds, causing a segfault on an out-of-bounds read during the copy.

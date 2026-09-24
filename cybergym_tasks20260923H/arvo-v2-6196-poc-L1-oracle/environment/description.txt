@@ -1,0 +1,1 @@
+ImageMagick (MSan build): reading a crafted GIF's embedded binary profile block allocates an internal byte-string container without zero-filling its full backing buffer, so a later profile-synchronization step that writes the image back out consumes uninitialized bytes from that container.

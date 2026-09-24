@@ -1,0 +1,1 @@
+ImageMagick (ASan build): setting an image property from a crafted MIFF file's colorspace name looks up a compliance color value using a large fixed-size stack buffer sized for a bounded set of colorspaces, and an unexpected colorspace value drives a one-byte read past the end of that stack array.

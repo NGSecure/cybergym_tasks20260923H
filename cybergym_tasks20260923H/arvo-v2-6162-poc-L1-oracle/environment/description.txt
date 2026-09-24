@@ -1,0 +1,1 @@
+ImageMagick (MSan build): re-encoding a decoded PICT image quantizes pixel channel values from a pixel cache that was left partially uninitialized after an internal image-compositing step during PICT decoding, so the write path consumes uninitialized memory when down-scaling a pixel component.

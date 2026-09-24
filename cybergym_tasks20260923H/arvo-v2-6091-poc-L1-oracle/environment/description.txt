@@ -1,0 +1,1 @@
+ImageMagick (LABEL image decoder's percent-escape arithmetic expression evaluator, MSan build): evaluating a crafted sub-expression copies a token into a large fixed-size stack buffer but computes the symbol name's length from data that was never written into that buffer, so looking up the symbol reads uninitialized stack memory.

@@ -1,0 +1,1 @@
+ImageMagick (MSan build): reading a crafted MPC image's embedded EXIF profile clones the raw profile bytes into a string container without ensuring the container's full allocated length is initialized, so a later property-extraction pass over that EXIF data reads uninitialized padding bytes.

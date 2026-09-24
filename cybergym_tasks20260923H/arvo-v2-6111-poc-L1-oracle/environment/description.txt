@@ -1,0 +1,1 @@
+ImageMagick (ASan build): parsing an embedded XMP metadata block while reading a crafted PostScript image runs the library's XML-tree property parser over a UTF-16-to-UTF-8 converted string, reading one byte past the end of the heap-allocated buffer.

@@ -1,0 +1,1 @@
+ImageMagick (LABEL image decoder's percent-escape arithmetic expression evaluator, ASan build): building up a crafted sub-expression string character by character during expression parsing writes one byte before the start of its fixed-size stack buffer, corrupting the stack guard and triggering a 1-byte stack-buffer-overflow write.

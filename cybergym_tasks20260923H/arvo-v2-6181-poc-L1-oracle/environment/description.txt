@@ -1,0 +1,1 @@
+irssi (ASan build): loading a short, malformed theme file drives the client's format-macro expander through its top-level, non-recursive expansion path during theme-module setup, over-reading a dynamically resized formatting buffer by one byte.
