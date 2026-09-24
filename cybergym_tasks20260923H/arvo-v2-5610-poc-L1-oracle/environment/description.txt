@@ -1,0 +1,1 @@
+MuPDF (PDF renderer, MSan build): parsing an embedded CID font's character map from a truncated/malformed compressed stream advances the tokenizer past data that the predictor-filter decompression never actually filled in, so the token scanner reads uninitialized bytes.

@@ -1,0 +1,1 @@
+MuPDF (PDF renderer, MSan build): the same cached color-converter cleanup that runs after a failed ICC transform during mesh shading also tears down an internal hash-table object whose fields were never (re)initialized on that failure path, so freeing it reads uninitialized memory.

@@ -1,0 +1,1 @@
+mupdf (MSan build): when rendering a glyph from a non-embedded font that page interpretation guessed the format for, the routine that adjusts a FreeType-hinted glyph's advance width consumes an advance value before it has been fully computed, causing a use-of-uninitialized-value warning during page rasterization.

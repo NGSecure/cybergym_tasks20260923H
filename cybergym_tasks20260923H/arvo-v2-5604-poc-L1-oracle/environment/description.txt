@@ -1,0 +1,1 @@
+MuPDF (PDF renderer, ASan build): when creating an ICC color transform fails while painting a mesh shading pattern, cleanup of the shading's cached color converter runs against memory that a prior step in the same call already freed, producing a heap use-after-free read.

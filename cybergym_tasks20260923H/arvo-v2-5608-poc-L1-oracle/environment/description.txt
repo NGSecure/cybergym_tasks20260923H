@@ -1,0 +1,1 @@
+ImageMagick (MSan build): decoding a WordPerfect Graphics (WPG) raster image whose compressed row data ends early copies a scanline buffer that wasn't fully populated into the image's pixel cache, producing a use-of-uninitialized-value read when the row is inserted.

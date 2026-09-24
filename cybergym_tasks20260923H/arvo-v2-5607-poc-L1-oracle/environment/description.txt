@@ -1,0 +1,1 @@
+ImageMagick (MSan build): loading a crafted plain-text pixel-list image and immediately re-serializing it back to hex color text formats a color channel value that the text-image reader's colorspace setup never actually initialized for this input, triggering a use-of-uninitialized-value warning.

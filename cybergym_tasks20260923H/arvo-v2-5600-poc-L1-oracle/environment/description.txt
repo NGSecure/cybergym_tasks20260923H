@@ -1,0 +1,1 @@
+mupdf (MSan build): when a content stream compressed with a PNG-predictor Flate filter ends prematurely, the predictor's decompression buffer is left partially unfilled, and the PDF page-content tokenizer that reads bytes from that stream afterward consumes uninitialized memory, triggering a use-of-uninitialized-value warning.

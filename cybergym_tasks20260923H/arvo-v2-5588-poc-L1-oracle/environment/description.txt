@@ -1,0 +1,1 @@
+ImageMagick (MSan build): decoding a DICOM image whose declared pixel-data length doesn't match the pixel cache allocated for it leaves part of the sample buffer unwritten, so the colorspace/grayscale-detection pass that inspects those samples reads uninitialized memory.

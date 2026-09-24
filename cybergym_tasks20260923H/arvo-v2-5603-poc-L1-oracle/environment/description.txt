@@ -1,0 +1,1 @@
+mupdf (MSan build): loading a PDF's embedded TrueType/OpenType font program whose declared stream length exceeds the data actually read leaves the tail of the in-memory font buffer unset, and the bundled FreeType SFNT table-directory parser reads past the real content while opening that font, producing a use-of-uninitialized-value warning.
